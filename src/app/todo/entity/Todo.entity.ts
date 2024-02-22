@@ -5,7 +5,7 @@ export class Todo {
     @PrimaryGeneratedColumn('uuid', { name: 'trfcod' })
     id: string
 
-    @Column({ type: 'varchar', length: 255,  name: 'trfatividade'})
+    @Column({ type: 'varchar', length: 255,  name: 'trfdescricao'})
     atividade: string
 
     @Column({ type: 'boolean', width: 1, name: 'trfconcluida' })
@@ -17,6 +17,6 @@ export class Todo {
     @UpdateDateColumn({ name: 'trfdtatualizacao' })
     updatedAt: string
 
-    @DeleteDateColumn({ name: 'trfdtdeletacao' })
+    @DeleteDateColumn({ name: 'trfdtdelecao' })
     deletedAt: string
 }
