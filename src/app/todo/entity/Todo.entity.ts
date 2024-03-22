@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
-
+//test
 @Entity('tarefa')
 export class Todo {
     @PrimaryGeneratedColumn('uuid', { name: 'trfcod' })

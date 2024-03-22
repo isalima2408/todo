@@ -6,9 +6,11 @@ services:
     container_name: todo-db
     restart: always
     ports: 
-      - "5432:5432"
+      - "3306:3306"
     volumes:
       - .docker/dbdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=todo
+      - DB_PASSWORD=root
+      - DB_DATABASE=todo
+      - DB_USERNAME=mysql
+      - DB_HOST=127.0.0.1

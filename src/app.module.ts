@@ -6,11 +6,11 @@ import { TodoModule } from './app/todo/todo.module';
 
 
 export const dataSourceOptions: DataSourceOptions = {
-  type: 'postgres',
+  type: 'mysql',
   host: '127.0.0.1',
-  port: 5432,
+  port: 3306,
   database: 'todo',
-  username: 'postgres',
+  username: 'mysql',
   password: 'root',
   entities: [Todo],
   synchronize: true,
